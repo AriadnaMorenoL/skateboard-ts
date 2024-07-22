@@ -1,39 +1,34 @@
+import { useEffect, useReducer } from "react";
 import Board from "./components/Board.tsx";
 import Header from "./components/Header.tsx";
-import { useCart } from "./hooks/useCart";
+import { cartReducer, initialState } from "./reducers/cart-reducer.ts";
 
 function App() {
 
-  const {data,
-    cart,
-    addToCart,
-    removeFromCart,
-    increaseItem,
-    decreaseItem,
-    clearCart,
-    isEmpty,
-    cartTotal,
-  } = useCart();
+
+  const [state, dispatch] = useReducer(cartReducer, initialState)
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(state.cart));
+  }, [state.cart]);
+
+
   return (
     <>
-      <Header 
-      cart={cart}
-      removeFromCart={removeFromCart}
-      increaseItem={increaseItem}
-      decreaseItem={decreaseItem}
-      clearCart={clearCart}
-      isEmpty={isEmpty}
-      cartTotal={cartTotal}
+      <Header
+        cart={state.cart}
+        dispatch={dispatch}
+        
       />
       <main className="container-xl mt-5">
-        <h2 className="text-center">Our colection</h2>
+        <h2 className="text-center ">Our colection</h2>
         <div className="row mt-5">
-          {data.map((board) =>(
+          {state.data.map((board) => (
             <Board
               key={board.id}
-              board ={board}
-              addToCart ={addToCart}
-              
+              board={board}
+              dispatch={dispatch}
+
             />
 
           ))}

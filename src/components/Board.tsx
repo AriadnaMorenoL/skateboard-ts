@@ -1,12 +1,14 @@
 import type { Board} from '../types/types'
+import { CartActions } from '../reducers/cart-reducer';
 
 
 type BoardProps = {
 	board: Board;
-	addToCart: (item: Board) => void;
+	dispatch: React.Dispatch<CartActions>
+
 };
 
-export default function Board({ board, addToCart }: BoardProps) {
+export default function Board({ board, dispatch }: BoardProps) {
 	const { name, image, description, price } = board;
 
 	return (
@@ -25,7 +27,7 @@ export default function Board({ board, addToCart }: BoardProps) {
 				<button
 					type="button"
 					className="btn btn-dark w-100"
-					onClick={() => addToCart(board)}
+					onClick={() => dispatch({type : 'add-to-cart' ,payload : {item : board}})}
 				>
 					Add to cart
 				</button>
