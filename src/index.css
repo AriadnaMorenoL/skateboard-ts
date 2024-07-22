@@ -62,7 +62,7 @@
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
+  --bs-pink: #f1269d;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
@@ -158,7 +158,7 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 900;
   line-height: 1.2;
-  color: #e99401;
+  color: #f1269d;
 }
 
 h1, .h1 {
@@ -424,7 +424,7 @@ button:not(:disabled),
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
-  --bs-btn-border-radius: 0;
+  --bs-btn-border-radius: 10px;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   --bs-btn-disabled-opacity: 0.65;
@@ -694,7 +694,8 @@ button:not(:disabled),
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
+  color: var(--bs-pink);
 }
 
 .text-black {
