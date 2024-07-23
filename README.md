@@ -3,19 +3,25 @@
 
 ![App Img](./public/img/app-img.png)
 
+## Introduction
+Skate Shop is a web application for managing and purchasing skateboards and accessories. The app provides a seamless shopping experience with a focus on modern JavaScript and TypeScript practices.  
 
-# Overview
+## Overview
 My App is a web application that started as a JavaScript project and was later migrated to TypeScript. Initially, the state management was handled using a custom hook, which was then refactored to use useReducer for better state management.
 This project was a learning experience where I implemented shopping cart management using the custom hook and the reducer.
 
-# Features
+## Features
 
-- Modern JavaScript and TypeScript: The project was initially developed in JavaScript and later transitioned to TypeScript for better type safety and developer experience.
-- State Management: The state management started with a custom hook and was later refactored to use useReducer, providing a more robust and scalable state handling mechanism.
-- Custom Hook: Originally used to manage the state in a modular and reusable way.
-- useReducer: Refactored to useReducer for improved state management and maintainability.
+- **Modern JavaScript and TypeScript**: The project was initially developed in JavaScript and later transitioned to TypeScript for better type safety and developer experience.
+- **State Management**: The state management started with a custom hook and was later refactored to use useReducer, providing a more robust and scalable state handling mechanism.
+- **Custom Hook**: Originally used to manage the state in a modular and reusable way.
+- **useReduce**r: Refactored to useReducer for improved state management and maintainability.
 
+## Technologies Used
 
+- **React**
+- **TypeScript**
+- **CSS**
 
 ## Installation
 
