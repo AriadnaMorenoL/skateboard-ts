@@ -1,7 +1,12 @@
 
 # Skate Shoop
 
-![App Img](./public/img/app-img.png)
+![App Img](./public/img/app-img.png)  
+
+## Live Demo
+
+Check out the live demo of the app: [Skate Shop Live](https://skateboard-ariadnaml.netlify.app/)
+
 
 ## Introduction
 Skate Shop is a web application for managing and purchasing skateboards and accessories. The app provides a seamless shopping experience with a focus on modern JavaScript and TypeScript practices.  
