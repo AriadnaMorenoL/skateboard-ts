@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Skate Shoop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
+My App is a web application that started as a JavaScript project and was later migrated to TypeScript. Initially, the state management was handled using a custom hook, which was then refactored to use useReducer for better state management.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern JavaScript and TypeScript: The project was initially developed in JavaScript and later transitioned to TypeScript for better type safety and developer experience.
+- State Management: The state management started with a custom hook and was later refactored to use useReducer, providing a more robust and scalable state handling mechanism.
+- Custom Hook: Originally used to manage the state in a modular and reusable way.
+- useReducer: Refactored to useReducer for improved state management and maintainability.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Project structure
 
-- Configure the top-level `parserOptions` property like this:
+my-app/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── hooks/
+│   │   └── useCart.ts // Initial custom hook (deprecated)
+│   ├── reducers/
+│   │   └── cart-Reducer.ts // New reducer implementation
+│   ├── types/
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── ...
+├── package.json
+└── README.md
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
