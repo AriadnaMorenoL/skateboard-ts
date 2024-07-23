@@ -1,5 +1,8 @@
 # Skate Shoop
 
+![App Img](./public/img/app-img.png)
+
+
 # Overview
 My App is a web application that started as a JavaScript project and was later migrated to TypeScript. Initially, the state management was handled using a custom hook, which was then refactored to use useReducer for better state management.
 
