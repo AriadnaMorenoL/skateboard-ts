@@ -16,6 +16,33 @@ This project was a learning experience where I implemented shopping cart managem
 - useReducer: Refactored to useReducer for improved state management and maintainability.
 
 
+
+## Installation
+
+To run this project locally, follow these steps in the bash:
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/AriadnaMorenoL/skateboard-ts.git
+
+3. Navigate to the project directory:  
+   ```bash
+   cd skateboard-ts
+
+5. Install the dependencies:
+   ```bash
+   npm install
+
+## Usage
+
+- To start the application in development mode:  
+  ```bash
+  npm start
+
+- To build the application for production:
+  ```bash
+  npm run build  
+
 # Project structure  
 
 my-app/  
@@ -33,6 +60,13 @@ my-app/
 │   └── ...  
 ├── package.json  
 └── README.md  
+
+
+
+
+
+
+
 
 
 
